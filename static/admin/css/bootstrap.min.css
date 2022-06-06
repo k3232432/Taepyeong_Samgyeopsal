@@ -564,8 +564,19 @@ padding-left: var(--bs-gutter-x, 0.75rem);
 margin-right: auto;
 margin-left: auto
 }
+
+.container2 {
+position: relative;
+width: 100%;
+padding-right: var(--bs-gutter-x, 0.75rem);
+padding-left: var(--bs-gutter-x, 0.75rem);
+margin-right: auto;
+margin-left: auto
+}
+
 @media(min-width:576px) {
 .container,
+.container2,
 .container-sm {
     max-width: 540px
 }
@@ -573,6 +584,7 @@ margin-left: auto
 @media(min-width:768px) {
 .container,
 .container-md,
+.container2,
 .container-sm {
     max-width: 720px
 }
@@ -580,6 +592,7 @@ margin-left: auto
 @media(min-width:992px) {
 .container,
 .container-lg,
+.container2,
 .container-md,
 .container-sm {
     max-width: 960px
@@ -589,6 +602,7 @@ margin-left: auto
 .container,
 .container-lg,
 .container-md,
+.container2,
 .container-sm,
 .container-xl {
     max-width: 1140px
@@ -596,6 +610,7 @@ margin-left: auto
 }
 @media(min-width:1400px) {
 .container,
+.container2,
 .container-lg,
 .container-md,
 .container-sm,
@@ -3786,6 +3801,7 @@ padding-top: 0.5rem;
 padding-bottom: 0.5rem
 }
 .navbar > .container,
+.navbar > .container2,
 .navbar>.container-fluid,
 .navbar>.container-lg,
 .navbar>.container-md,

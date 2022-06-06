@@ -2,19 +2,63 @@
 {% load static %}
 
 {% block content %}
+<link href="../../static/admin/css/bootstrap.min.css" rel="stylesheet">
+<link href="../../static/admin/css/version1.css" rel="stylesheet">
     <div class="container" style="position: relative; top: 80px;">
-      <a class="navbar-brand" style="color:black; background-color:gray; border-radius: 30px; padding-left: 1rem; padding-right: 1rem;" href="#">
+      <a class="navbar-brand" style="color:pink; background-color:#e7e7e7; border-radius: 30px; border:1px solid gray; padding-left: 1rem; padding-right: 1rem;" href="#">
         <img src="/docs/5.2/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24"> hot
       </a>
-      <a class="navbar-brand"style="color:black; background-color:gray; border-radius: 30px; padding-left: 1rem; padding-right: 1rem;" href="#">
+      <a class="navbar-brand"style="color:black; background-color:#e7e7e7; border-radius: 30px; border:1px solid gray; padding-left: 1rem; padding-right: 1rem;" href="#">
         <img src="/docs/5.2/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24"> latest
       </a>
-      <a class="navbar-brand" style="color:black; background-color:gray; border-radius: 30px; padding-left: 1rem; padding-right: 1rem;" href="#">
+      <a class="navbar-brand" style="color:black; background-color:#e7e7e7; border-radius: 30px; border:1px solid gray; padding-left: 1rem; padding-right: 1rem;" href="#">
         <img src="/docs/5.2/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24"> new
       </a>
-      <a class="navbar-brand" style="color:black; background-color:gray; border-radius: 30px; padding-left: 1rem; padding-right: 1rem;" href="#">
+      <a class="navbar-brand" style="color:black; background-color:#e7e7e7; border-radius: 30px; border:1px solid gray; padding-left: 1rem; padding-right: 1rem;" href="#">
         <img src="/docs/5.2/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24"> prize
       </a>
       
     </div>
+    <!-- head line부분 -->
+    <div class="container" style="position: relative; top: 100px; font-size: 25px">
+      HOT CLIP
+    </div>
+    <!-- 무한 스크롤 부분 -->
+    <div class="container" style="position: relative; top: 120px; overflow:scroll; max-width: 80%;">
+    
+      <div id="productBeforeList"></div>
+      <div id="productScroll"></div>
+    </div>
+
+    <!-- 무한스크롤 스크립트 영역 -->
+    <script>
+      $(function() {
+
+// 스크롤 감지
+  var didScroll = true;
+  
+  $(window).on('scroll', function() { didScroll = true; });
+  
+  setInterval(function() {
+      var bottomHeight = $(window).scrollTop() + $(window).height() + 600;
+      var docHeight = $(document).height();
+
+      if (didScroll) {
+          didScroll = false;
+          if (bottomHeight > docHeight) infiniteScrollContent();
+      }
+  }, 250);
+  
+  function infiniteScrollContent() {
+    
+      var scrollcon = '';
+      for (var k = 0; k < 1; k++) {
+          scrollcon += '<div class="product-item"><strong>모델종류 넣어주세요</strong></div>';
+      }			
+      $("#productScroll").append(scrollcon);
+  }
+});
+    </script>
+<!-- 무한스크롤 스크립트 영역 -->
+
 {% endblock %}
