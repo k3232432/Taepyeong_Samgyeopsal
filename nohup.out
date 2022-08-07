@@ -3054,3 +3054,14 @@ Not Found: /docs/5.2/assets/brand/bootstrap-logo.svg
 [07/Aug/2022 09:00:49] "GET /docs/5.2/assets/brand/bootstrap-logo.svg HTTP/1.0" 404 2969
 Not Found: /favicon.ico
 [07/Aug/2022 09:00:50] "GET /favicon.ico HTTP/1.0" 404 2853
+[07/Aug/2022 09:00:56] "GET /login/ HTTP/1.0" 200 5199
+[07/Aug/2022 09:00:58] "GET /login/sign-up/ HTTP/1.0" 200 75337
+[07/Aug/2022 09:01:20] "GET / HTTP/1.0" 200 6390
+Not Found: /docs/5.2/assets/brand/bootstrap-logo.svg
+[07/Aug/2022 09:01:20] "GET /docs/5.2/assets/brand/bootstrap-logo.svg HTTP/1.0" 404 2969
+[07/Aug/2022 09:01:49] "GET / HTTP/1.0" 200 6390
+Not Found: /docs/5.2/assets/brand/bootstrap-logo.svg
+[07/Aug/2022 09:01:49] "GET /docs/5.2/assets/brand/bootstrap-logo.svg HTTP/1.0" 404 2969
+[07/Aug/2022 09:01:54] "GET / HTTP/1.0" 200 6390
+Not Found: /docs/5.2/assets/brand/bootstrap-logo.svg
+[07/Aug/2022 09:01:54] "GET /docs/5.2/assets/brand/bootstrap-logo.svg HTTP/1.0" 404 2969
